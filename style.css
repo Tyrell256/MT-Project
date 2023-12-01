@@ -1,7 +1,7 @@
 body{
     background-color: black;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Montserrat;
 }
 
 ul{
@@ -12,7 +12,6 @@ ul{
     background-color: #000;
 }
 li{
-    display: inline;
     float: left;
 }
 li a{
@@ -33,16 +32,39 @@ li img{
     
 }
 
+p{
+    color: gray;
+    font-size: 16px;
+}
+
 
 
 .banner{
-  float: left;
+  display: grid;
+  align-items: center; 
+  grid-template-columns: 1fr 2fr ;
+  column-gap: 5px;
+  margin: 40px 0px;
+  padding-left: 70px;
+  max-width: 100%;
+  font-size: 32px;
 }
-.banner.column{
-    width: 25%;
+.banner h2{
+    font-size: 28px;
 }
+
+b{
+    color: rgb(255, 176, 0);
+}
+
 .banner img{
-    width: 70%;
+    max-width: 100%; 
+    align-self: baseline;
+    align-items: end;
+}
+
+img{
+    max-width: 100%;
 }
 @media screen (max-width: 600px) {
     .banner.column, .banner img{
@@ -73,31 +95,79 @@ button{
 }
 
 .container-0{
-    float: left;
-
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 2fr ;
+    column-gap: 5px;
+    margin: 40px 0px;
+    padding-left: 70px;
+    max-width: 100%;
+    font-size: 32px;
 }
-.container-0.column{
-    
+
+.container-1{
+    display: grid;
+  align-items: center; 
+  grid-template-columns: 1fr 2fr ;
+  column-gap: 5px;
+  margin: 40px 0px;
+  padding-left: 70px;
+  max-width: 100%;
+  font-size: 32px;
 }
 
+.container-2{
+  display: grid;
+  align-items: center; 
+  grid-template-columns: 2fr 1fr ;
+  column-gap: 5px;
+  margin: 40px 0px;
+  padding-left: 70px;
+  max-width: 100%;
+  font-size: 32px;
+}
 
 
 
 
 
 .container-3{
+    border: solid;
     border-color: rgb(255, 176, 0);
     border-width: 5px;
     border-radius: 10px;
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+    margin: 40px 0px;
+    padding-left: 70px;
+    max-width: 100%;
+    font-size: 32px;
 }
 .box{
+    display: grid;
+    align-items: center;
+    grid-row: inherit;
   
 }
 
-footer h2{
-    float: left;
+.container-4{
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 2fr 1fr ;
+    column-gap: 5px;
+    margin: 40px 0px;
+    padding-left: 70px;
+    max-width: 100%;
+    font-size: 32px;
 }
-footer img {
-    float: right;
+
+.box img{
+    background-color: rgb(255, 176, 0);
+}
+
+footer{
+    align-items: baseline;
 }
 
