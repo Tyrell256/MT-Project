@@ -133,11 +133,11 @@ button{
     font-family: sans-serif;
     cursor: pointer;
 }
-/*Animation Test Text Color */
+/*Animation Test Text Color 
 @keyframes colors {
     from {color: rgb(255, 176, 0);} 
     to {color: white;}  
-}
+}*/
 
 
 .text{
@@ -147,6 +147,18 @@ button{
     font-weight: 700px;
     text-align: center;
     animation: colors 10s linear 0s infinite normal forwards;
+}
+
+b{
+    animation-duration: 1s;
+    animation-name: textswap;
+    animation-iteration-count: 5;
+    animation-delay: 5s;
+}
+
+@keyframes textswap {
+    from{opacity: 0;}
+    to{opacity: 1;}
 }
 
 .container-0{
@@ -244,5 +256,6 @@ button{
 footer{
     align-items: baseline;
     background-color: #2f2f2f;
+    display: inline;
 }
 
