@@ -2,6 +2,7 @@ body{
     background-color: black;
     color: white;
     font-family: Montserrat, sans-serif;
+    scrollbar-color: rbg(255, 176, 0);
 }
 
 ul{
@@ -12,7 +13,7 @@ ul{
     background-color: #000;
 }
 li{
-    float: left;
+    float: right;
 }
 li a{
     display: block;
@@ -48,6 +49,7 @@ p{
   padding-left: 70px;
   max-width: 100%;
   font-size: 32px;
+  column-gap: normal;
 }
 .banner h2{
     font-size: 28px;
@@ -75,13 +77,16 @@ img{
     -ms-animation: fadeIn 10s;
 }
 
-.fade-in-image {
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-  }
-  .fade-in-image:hover {
-    opacity: 1;
-  }
+.fade-in-image:hover{
+    animation: fadeh 3s;
+}
+
+@keyframes fadeh {
+    0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
 @keyframes fadeIn {
     0% { opacity: 0; }
   100% { opacity: 1; }
@@ -123,11 +128,17 @@ button{
     width: 180px;
     padding-bottom: 18px 64px;
     color: black;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 16px;
     font-family: sans-serif;
     cursor: pointer;
 }
+/*Animation Test Text Color */
+@keyframes colors {
+    from {color: rgb(255, 176, 0);} 
+    to {color: white;}  
+}
+
 
 .text{
     color: rgb(255, 176, 0);
@@ -135,35 +146,37 @@ button{
     font-size: 36px;
     font-weight: 700px;
     text-align: center;
+    animation: colors 10s linear 0s infinite normal forwards;
 }
 
 .container-0{
     display: grid;
     align-items: center; 
     grid-template-columns: 1fr 2fr ;
-    column-gap: 5px;
+    column-gap: 100px;
     margin: 40px 0px;
     padding-left: 70px;
     max-width: 100%;
     font-size: 32px;
+
 }
 
 .container-1{
     display: grid;
   align-items: center; 
   grid-template-columns: 1fr 2fr ;
-  column-gap: 5px;
+  column-gap: 100px;
   margin: 40px 0px;
   padding-left: 70px;
   max-width: 100%;
-  font-size: 32px;
+  font-size: 26px;
 }
 
 .container-2{
   display: grid;
   align-items: center; 
   grid-template-columns: 2fr 1fr ;
-  column-gap: 5px;
+  column-gap: 50px;
   margin: 40px 0px;
   padding-left: 70px;
   max-width: 100%;
@@ -179,14 +192,7 @@ button{
     border-color: rgb(255, 176, 0);
     border-width: 5px;
     border-radius: 10px;
-    display: grid;
-    align-items: center; 
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 5px;
-    padding: 10px;
-    
-    max-width: 100%;
-    font-size: 32px;
+   
 }
 .box{
     display: grid;
@@ -199,12 +205,31 @@ button{
     display: grid;
     align-items: center; 
     grid-template-columns: 2fr 1fr ;
-    column-gap: 5px;
+    column-gap: 50px;
     margin: 40px 0px;
     
     max-width: 100%;
     font-size: 32px;
 }
+
+.orange-text{
+    width: 100%;
+    text-align: center;
+    color: rgb(255, 176, 0);
+}
+
+.boxes{
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+    margin: auto;
+    padding-left: 20px;
+    max-width: 100%;
+    font-size: 32px;
+    max-width: fit-content;
+}
+
 
 .box h2{
     font-size: 20px;
